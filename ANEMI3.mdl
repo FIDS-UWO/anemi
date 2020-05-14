@@ -1871,7 +1871,7 @@ Total Wastewater Reuse=
 	|
 
 Global Industrial Withdrawal Calibration:INTERPOLATE::=
-	GET XLS DATA('../Data/Calibration Data.xlsx', 'Sheet1' , 'A' , 'T6')
+	GET XLS DATA('Calibration Data.xlsx', 'Sheet1' , 'A' , 'T6')
 	~	km3/Year
 	~		|
 
@@ -1985,12 +1985,12 @@ N Emission Industrial Wastewater=
 	~		|
 
 Global Agricultural Withdrawal Calibration:INTERPOLATE::=
-	GET XLS DATA('../Data/Calibration Data.xlsx', 'Sheet1' , 'A' , 'V6')
+	GET XLS DATA('Calibration Data.xlsx', 'Sheet1' , 'A' , 'V6')
 	~	km3/Year
 	~		|
 
 Global Domestic Withdrawal Calibration:INTERPOLATE::=
-	GET XLS DATA('../Data/Calibration Data.xlsx', 'Sheet1' , 'A' , 'R6')
+	GET XLS DATA('Calibration Data.xlsx', 'Sheet1' , 'A' , 'R6')
 	~	km3/Year
 	~		|
 
@@ -2723,7 +2723,7 @@ init Renewable Groundwater=
 	~		|
 
 Global Desalination Withdrawal Calibration:INTERPOLATE::=
-	GET XLS DATA('../Data/Calibration Data.xlsx', 'Sheet1' , 'A' , 'P6')
+	GET XLS DATA('Calibration Data.xlsx', 'Sheet1' , 'A' , 'P6')
 	~	km3/Year
 	~	Voutchkov (2015) wrote an article on the IWA website regarding current \
 		installed desalination capacity as well as projected trends in production \
@@ -2737,7 +2737,7 @@ Desalination Production Error=
 	~		|
 
 Global Water Withdrawal Calibration:INTERPOLATE::=
-	GET XLS DATA('../Data/Calibration Data.xlsx', 'Sheet1' , 'A' , 'I6')
+	GET XLS DATA('Calibration Data.xlsx', 'Sheet1' , 'A' , 'I6')
 	~	km3/Year
 	~	Global water withdrawals from Shiklomanov (2000) and FAO-AQUASTAT.
 	|
@@ -2785,14 +2785,14 @@ Surface Water Production Error=
 	|
 
 Global Surface Water Withdrawal Calibration:INTERPOLATE::=
-	GET XLS DATA('../Data/Calibration Data.xlsx', 'Sheet1' , 'A' , 'J6')
+	GET XLS DATA('Calibration Data.xlsx', 'Sheet1' , 'A' , 'J6')
 	~	km3/Year
 	~	Surface water withdrawals simulated in Wada et al. (2014) using an \
 		integrated hydrological model.
 	|
 
 Global Groundwater Withdrawal Calibration:INTERPOLATE::=
-	GET XLS DATA('../Data/Calibration Data.xlsx', 'Sheet1' , 'A' , 'M6')
+	GET XLS DATA('Calibration Data.xlsx', 'Sheet1' , 'A' , 'M6')
 	~	km3/Year
 	~	Simulated from Wada et al. (2014) using an integrated hydrological model.
 	|
@@ -20761,8 +20761,7 @@ $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,8
 :SCALE
 :VAR GDP per Capita
 :L<%^E!@
-1:baseline.vdf
-8:ANEMI3 Results.vgd
+1:test.vdf
 9:test
 11:C:\Users\patri\OneDrive - The University of Western Ontario\ANEMI3\Scenarios\Food Production Increase WRI.VOC
 12:C:\Users\patri\OneDrive - The University of Western Ontario\ANEMI3\Scenarios\Food Production Increase WRI.VPD
@@ -20773,7 +20772,7 @@ $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,8
 27:2,
 34:0,
 4:Time
-5:Population (1)
+5:Population
 35:Date
 36:YYYY-MM-DD
 37:2000
@@ -20790,28 +20789,28 @@ $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,8
 6:biomass energy
 6:C
 6:coal
-6:csp
-6:ds
-6:geothermal
-6:gw
-6:hydro
-6:i1
-6:ind
 6:coal conv
 6:coal igcc
+6:csp
+6:ds
 6:gas
+6:geothermal
+6:gw
 6:hn
+6:hydro
 6:hydrogen
+6:i1
+6:ind
 6:j1
 6:Jan
 6:jsub6
+6:ksub1
+6:layer1
 6:lost
 6:new
 6:nuclear
 6:oil
 6:oilgas
-6:ksub1
-6:layer1
 6:pv
 6:q4
 6:RCP26
